@@ -5,8 +5,8 @@ customers_data = pd.read_csv('customer_train.csv')
 # Beginning memory usage 2.0+ MB
 ds_jobs_clean = customers_data.copy()
 # nominal category --> category //// ordinal category --> ordered category
-# nominals/ gender, enroled_uni, major,company type,city
-# ordinals ,educ level, exp, companysize, last_new_job
+# nominals gender, major, company type, city
+# ordinals edu_level, comp_size, last_new_job, exp, enrolled_uni, rele_exp
 cat_orders = {
 'education_level' : ['Primary School','High School','Graduate','Masters','Phd'],
 'company_size' : ['<10','10-49','50-99','100-499','500-999','1000-4999','5000-9999','10000+'],
